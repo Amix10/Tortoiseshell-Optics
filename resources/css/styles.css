@@ -1,0 +1,291 @@
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: block;
+    font-size: 16px;
+    background: white;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 0.05rem;
+    line-height: 1.4em;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    display: block;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 31rem;
+    padding-top: 1rem;
+    margin: 0;
+    z-index: 3;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    width: 992px;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: cadetblue;
+    color: white;
+    height: 2rem;
+    width: 928px;
+    margin: 0;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.company .company-brand {
+    display: flex;
+    align-items: center;
+}
+
+.company .company-brand img {
+    height: 1.5rem;
+    width: auto;
+    margin: 0 1rem;
+}
+
+.company nav {
+    display: flex;
+    align-items: center;
+}
+
+.company nav span {
+    padding: 0 1rem;
+}
+
+.company .mobile-nav {
+    display: none;
+    margin: 0;
+}
+
+
+.container .highlight {
+    display: inline-block;
+    background-color: white;
+    padding: 1.5rem 5rem;
+    margin-top: 14rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.icona {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 3rem;
+    width: 5rem;
+    height: 8rem;
+}
+
+.icona #paper-img {
+    width: 3.5rem;
+    margin-bottom: 1rem;
+}
+.icona #ruler-img {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+.icona #truck-img {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+.business-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.detail-info {
+    width: 35%;
+    margin-right: 5%;
+    margin-bottom: 5rem;
+}
+.detail-info span {
+    background-color: cadetblue;
+    padding: 0.5rem 1.25rem;
+    font-weight: bold;
+    color: white;
+    max-width: 10rem;
+}
+.detail-info p {
+    margin-top: 1.5rem;
+}
+footer {
+    display: flex;
+    align-items: center;
+    background-color: azure;
+    padding: 4rem;
+}
+footer img {
+    height: 1.5rem;
+    width: auto;
+    margin-right: 1rem;
+}
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+}
+  .jumbotron {
+    padding-top: 0;
+    height: 22rem;
+}
+  header {
+    width: 928px;
+}
+  .company {
+    width: 928px;
+}
+  .container .highlight {
+    padding: 1.75rem 4rem;
+    margin-top: 9rem;
+}
+  h1 {
+    font-size: 1.33rem;
+}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+   .container {
+    width: 100%;
+}
+  .jumbotron {
+    padding-top: 0;
+    background-position: 20%;
+    height: 17rem;
+}
+  header {
+    width: 100%;
+    margin: 0;
+}
+  .company {
+    width: 100%;
+}
+  .company .mobile-nav {
+    display: flex;
+    margin: 2rem;
+}
+  .company .pad-nav {
+    display: none;
+}
+  .company .company-brand span {
+    display: none;
+}
+  .company .mobile-nav {
+    display: flex;
+}
+  .container .highlight {
+    padding: 0.75rem 4rem;
+    margin-top: 12.5rem;
+    width: 100%;
+}
+
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+}
+  .services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3.77rem 0;
+}
+  .icona {
+    justify-content: center;
+    margin: 0;
+    width: 7rem;
+    height: auto;
+}
+  .icona #paper-img {
+    width: 3.5rem;
+}
+  .icona #ruler-img {
+    width: 5rem;
+}
+  .icona #truck-img {
+    width:  5rem;
+}
+  .icona #ruler {
+    margin-top: 1.54rem;
+}
+  .icona #truck {
+    margin-top: 1.54rem;
+}
+  .business-info {
+    display: block;
+}
+   .detail-info {
+    width: 100%;
+    display: block;
+}
+   .detail-info span {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    max-width: 480px;
+}
+  .detail-info p {
+    width:85%;
+    font-size: 0.77rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+  footer span {
+    display: none;
+}
+
+  .container footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
